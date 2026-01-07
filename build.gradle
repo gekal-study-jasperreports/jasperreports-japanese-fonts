@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'cn.gekal'
-version '0.0.1-SNAPSHOT'
+version '0.0.1'
 
 repositories {
     mavenCentral()
@@ -51,7 +51,7 @@ publishing {
                     developer {
                         id = 'gekal'
                         name = 'Gekal'
-                        email = 'gekal@gekal.cn'
+                        email = 'liu.hongying@gekal.cn'
                     }
                 }
                 scm {
