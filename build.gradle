@@ -12,6 +12,17 @@ repositories {
 dependencies {
 }
 
+jar {
+    manifest {
+        attributes(
+                'Implementation-Title': project.name,
+                'Implementation-Version': project.version,
+                'Implementation-Vendor': project.group,
+                'Automatic-Module-Name': 'cn.gekal.jasperreports.japanese.fonts'
+        )
+    }
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
