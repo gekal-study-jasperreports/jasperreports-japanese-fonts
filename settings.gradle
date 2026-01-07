@@ -12,4 +12,3 @@ plugins {
 }
 
 rootProject.name = 'jasperreports-japanese-fonts'
-include('lib')

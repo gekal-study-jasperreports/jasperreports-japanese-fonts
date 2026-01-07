@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'cn.gekal'
-//name 'jasperreports-japanese-fonts'
+version '1.0.0'
 
 repositories {
     mavenCentral()
