@@ -4,8 +4,8 @@ plugins {
     id 'signing'
 }
 
-group 'cn.gekal'
-version '0.0.1'
+group = 'cn.gekal'
+version = '0.0.1'
 
 repositories {
     mavenCentral()
@@ -68,16 +68,19 @@ publishing {
             def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
             url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
             credentials {
-                username = project.findProperty("ossrhUsername")
-                password = project.findProperty("ossrhPassword")
+                username = project.findProperty("mavenCentralUsername")
+                password = project.findProperty("mavenCentralPassword")
             }
         }
     }
 }
 
 signing {
-    required { gradle.taskGraph.hasTask("publish") }
-    sign publishing.publications.mavenJava
+    def signingKey = findProperty("signing.keyId")
+    def signingPassword = findProperty("signing.password")
+    if (signingKey && signingPassword) {
+        sign publishing.publications.mavenJava
+    }
 }
 
 javadoc {
