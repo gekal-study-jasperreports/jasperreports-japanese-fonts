@@ -35,12 +35,17 @@ jar {
 
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+        maven(MavenPublication) {
+            group = 'cn.gekal'
+            version = '0.0.1'
+
             from components.java
+
             pom {
                 name = 'JasperReports Japanese Fonts'
                 description = 'Japanese fonts extension for JasperReports.'
                 url = 'https://github.com/gekal/jasperreports-japanese-fonts'
+                inceptionYear = '2026'
                 licenses {
                     license {
                         name = 'The Apache License, Version 2.0'
@@ -49,7 +54,6 @@ publishing {
                 }
                 developers {
                     developer {
-                        id = 'gekal'
                         name = 'Gekal'
                         email = 'liu.hongying@gekal.cn'
                     }
@@ -64,27 +68,27 @@ publishing {
     }
     repositories {
         maven {
-            def releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
-            def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
-            url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
-            credentials {
-                username = project.findProperty("mavenCentralUsername")
-                password = project.findProperty("mavenCentralPassword")
-            }
+            url = layout.buildDirectory.dir('staging-deploy')
         }
     }
 }
 
-signing {
-    def signingKey = findProperty("signing.keyId")
-    def signingPassword = findProperty("signing.password")
-    if (signingKey && signingPassword) {
-        sign publishing.publications.mavenJava
+jreleaser {
+    signing {
+        pgp {
+            active = 'ALWAYS'
+            armored = true
+        }
     }
-}
-
-javadoc {
-    if (JavaVersion.current().isJava9Compatible()) {
-        options.addBooleanOption('html5', true)
+    deploy {
+        maven {
+            mavenCentral {
+                sonatype {
+                    active = 'ALWAYS'
+                    url = 'https://central.sonatype.com/api/v1/publisher'
+                    stagingRepository('build/staging-deploy')
+                }
+            }
+        }
     }
 }
