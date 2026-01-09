@@ -1,0 +1,74 @@
+IPA Font License Agreement v1.0
+
+The Information-technology Promotion Agency, Japan (hereinafter referred to as "IPA") 
+approves the use of the "IPA Fonts" (hereinafter referred to as the "Licensed Program") 
+based on the terms and conditions of this Agreement.
+
+(Definitions)
+Article 1
+1. "Digital Font Data" shall mean the computer software that is used to render 
+characters or symbols by generating their configurations in digital form.
+2. "Licensed Program" shall mean the Digital Font Data that is provided to You 
+under this Agreement.
+3. "Derived Program" shall mean the Digital Font Data that is created by 
+reproducing and/or modifying the Licensed Program, or that is created by 
+reproducing and/or modifying the Licensed Program and combining it with other 
+Digital Font Data.
+4. "Digital Content" shall mean the digital data (excluding computer software) 
+that is created for the purpose of communicating information to third parties 
+by using the Licensed Program or the Derived Program.
+5. "You" shall mean an individual or a legal entity that intends to use the 
+Licensed Program under this Agreement.
+
+(Grant of License)
+Article 2
+IPA hereby grants You the license to use the Licensed Program under the terms 
+and conditions of this Agreement.
+
+(Permissions)
+Article 3
+1. You may use the Licensed Program for any purpose, including but not limited 
+to installation on a computer, display, and printing.
+2. You may create Digital Content by using the Licensed Program.
+3. You may reproduce and/or modify the Licensed Program.
+4. You may distribute the Licensed Program, the Derived Program, and the 
+Digital Content.
+
+(Conditions)
+Article 4
+1. If You distribute the Licensed Program or the Derived Program, You must 
+include a copy of this Agreement.
+2. If You distribute the Derived Program, You must not use the name of the 
+Licensed Program as the name of the Derived Program.
+3. If You distribute the Derived Program, You must include a notice stating 
+that the Derived Program is a modified version of the Licensed Program.
+4. If You distribute the Derived Program, You must grant the license to the 
+recipients under the terms and conditions of this Agreement.
+
+(Restrictions)
+Article 5
+1. You must not use the name of IPA or the name of the Licensed Program for 
+the purpose of promoting the Derived Program or the Digital Content, except 
+with the prior written consent of IPA.
+2. You must not sell the Licensed Program or the Derived Program as a 
+standalone product.
+
+(No Warranty)
+Article 6
+THE LICENSED PROGRAM IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
+EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
+IPA SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING OUT OF THE USE OR 
+INABILITY TO USE THE LICENSED PROGRAM.
+
+(Termination)
+Article 7
+If You fail to comply with any of the terms and conditions of this 
+Agreement, the license granted under this Agreement shall terminate 
+automatically.
+
+(Governing Law and Jurisdiction)
+Article 8
+This Agreement shall be governed by the laws of Japan. Any dispute 
+arising out of or in connection with this Agreement shall be subject 
+to the exclusive jurisdiction of the Tokyo District Court.

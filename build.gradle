@@ -51,6 +51,10 @@ publishing {
                         name = 'The Apache License, Version 2.0'
                         url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
                     }
+                    license {
+                        name = 'IPA Font License Agreement v1.0'
+                        url = 'https://fonts.jp/ipaex_licenses/'
+                    }
                 }
                 developers {
                     developer {

@@ -62,5 +62,15 @@ This project uses GitHub Actions and JReleaser for automated releases to Maven C
 
 ## License
 
-This project is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
-The IPAex fonts are subject to the [IPA Font License Agreement v1.0](https://fonts.jp/ipaex_licenses/).
+This project itself is licensed under the [Apache License, Version 2.0](LICENSE).
+
+### Third-Party Assets
+
+This project includes the following third-party assets, which are subject to their respective licenses:
+
+- **IPAex Fonts (IPAexGothic, IPAexMincho)**
+    - License: [IPA Font License Agreement v1.0](IPA_Font_License_Agreement_v1.0.txt)
+    - Source: [IPA Font (Information-technology Promotion Agency, Japan)](https://fonts.jp/ipaex_licenses/)
+- **Comic Sans MS**
+    - License: Proprietary (Microsoft Corporation)
+    - Note: This font is included for demonstration purposes only. Redistribution of this font may be restricted. Please ensure you have the necessary rights to use and distribute it in your environment, or consider replacing it with an open-source alternative.
