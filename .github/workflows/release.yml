@@ -60,4 +60,4 @@ jobs:
           JRELEASER_MAVENCENTRAL_PASSWORD: ${{ secrets.JRELEASER_MAVENCENTRAL_PASSWORD }}
         run: |
           git checkout "v${{ steps.get_version.outputs.VERSION }}"
-          ./gradlew jreleaserFullRelease -Pversion=${{ steps.get_version.outputs.VERSION }}
+          ./gradlew publish jreleaserFullRelease -Pversion=${{ steps.get_version.outputs.VERSION }}
