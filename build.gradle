@@ -7,6 +7,10 @@ plugins {
 group = 'cn.gekal'
 version = project.findProperty('version') ?: '0.0.1'
 
+afterEvaluate {
+    jreleaser.project.version = project.version.toString()
+}
+
 repositories {
     mavenCentral()
 }
@@ -78,6 +82,9 @@ publishing {
 }
 
 jreleaser {
+    project {
+        version = project.version
+    }
     signing {
         pgp {
             active = 'ALWAYS'
