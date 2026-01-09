@@ -44,7 +44,7 @@ publishing {
             pom {
                 name = 'JasperReports Japanese Fonts'
                 description = 'Japanese fonts extension for JasperReports.'
-                url = 'https://github.com/gekal/jasperreports-japanese-fonts'
+                url = 'https://github.com/gekal-study-jasperreports/jasperreports-japanese-fonts'
                 inceptionYear = '2026'
                 licenses {
                     license {
@@ -59,7 +59,7 @@ publishing {
                     }
                 }
                 scm {
-                    connection = 'scm:git:git://github.com/gekal/jasperreports-japanese-fonts.git'
+                    connection = 'scm:git:git://github.com/gekal-study-jasperreports/jasperreports-japanese-fonts.git'
                     developerConnection = 'scm:git:ssh://github.com/gekal/jasperreports-japanese-fonts.git'
                     url = 'https://github.com/gekal/jasperreports-japanese-fonts'
                 }
