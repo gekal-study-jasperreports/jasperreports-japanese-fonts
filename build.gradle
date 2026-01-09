@@ -60,8 +60,8 @@ publishing {
                 }
                 scm {
                     connection = 'scm:git:git://github.com/gekal-study-jasperreports/jasperreports-japanese-fonts.git'
-                    developerConnection = 'scm:git:ssh://github.com/gekal/jasperreports-japanese-fonts.git'
-                    url = 'https://github.com/gekal/jasperreports-japanese-fonts'
+                    developerConnection = 'scm:git:ssh://github.com/gekal-study-jasperreports/jasperreports-japanese-fonts.git'
+                    url = 'https://github.com/gekal-study-jasperreports/jasperreports-japanese-fonts'
                 }
             }
         }
