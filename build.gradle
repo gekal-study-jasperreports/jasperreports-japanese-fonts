@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'cn.gekal'
-version = '0.0.1'
+version = project.findProperty('version') ?: '0.0.1'
 
 repositories {
     mavenCentral()
@@ -37,7 +37,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             group = 'cn.gekal'
-            version = '0.0.1'
+            version = project.version
 
             from components.java
 
