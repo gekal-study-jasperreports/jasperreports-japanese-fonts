@@ -4,8 +4,10 @@ plugins {
     id 'org.jreleaser' version '1.22.0'
 }
 
+def projectVersion = project.findProperty('version') ?: '0.0.1'
+
 group = 'cn.gekal'
-version = project.findProperty('version') ?: '0.0.1'
+version = projectVersion
 
 repositories {
     mavenCentral()
@@ -80,7 +82,7 @@ publishing {
 jreleaser {
     project {
         name = 'jasperreports-japanese-fonts'
-        version = project.version
+        version = projectVersion
         description = 'Japanese fonts extension for JasperReports.'
         longDescription = 'Japanese fonts extension for JasperReports.'
         links {
