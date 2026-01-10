@@ -7,10 +7,6 @@ plugins {
 group = 'cn.gekal'
 version = project.findProperty('version') ?: '0.0.1'
 
-afterEvaluate {
-    jreleaser.project.version = project.version.toString()
-}
-
 repositories {
     mavenCentral()
 }
@@ -83,7 +79,25 @@ publishing {
 
 jreleaser {
     project {
+        name = 'jasperreports-japanese-fonts'
         version = project.version
+        description = 'Japanese fonts extension for JasperReports.'
+        longDescription = 'Japanese fonts extension for JasperReports.'
+        links {
+            homepage = 'https://github.com/gekal-study-jasperreports/jasperreports-japanese-fonts'
+        }
+        authors = ['Gekal']
+        license = 'Apache-2.0'
+        inceptionYear = '2026'
+    }
+    release {
+        github {
+            overwrite = true
+            changelog {
+                formatted = 'ALWAYS'
+                preset = 'conventional-commits'
+            }
+        }
     }
     signing {
         pgp {
